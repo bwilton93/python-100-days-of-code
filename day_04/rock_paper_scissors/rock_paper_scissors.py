@@ -39,14 +39,14 @@ computer_choice = random.randint(0, 2)
 winner = ''
 
 if(player_choice == computer_choice):
-  result = 'draw'
+  result = "It's a draw."
 elif(player_choice == 0 and computer_choice == 2 
      or player_choice == 1 and computer_choice == 0
      or player_choice == 2 and computer_choice == 1):
-  result = 'win'
+  result = 'You win!'
 else:
-  result = 'lose'
+  result = 'You lose.'
 
 print(f'{selection[player_choice]}\n')
 print(f"Computer chose:\n {selection[computer_choice]}\n")
-print(f"You {result}")
+print(result)
