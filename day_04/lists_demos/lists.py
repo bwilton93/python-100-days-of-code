@@ -57,3 +57,12 @@ print(states_of_america[-1])
 states_of_america.append("This is not a state")
 
 print(states_of_america[-1])
+
+states_of_america[-1] = "This has been changed"
+
+print(states_of_america[-1])
+
+states_of_america.extend(["Item 1", "Item 2"])
+
+print(states_of_america[-2])
+print(states_of_america[-1])
