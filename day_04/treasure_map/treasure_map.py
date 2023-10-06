@@ -6,13 +6,13 @@ print("Hiding your treasure! X marks the spot.")
 position = input() # Where do you want to put the treasure?
 
 x_coordinate = int(position[1]) - 1
-y_coordinate = position[0]
+y_coordinate = position[0].lower()
 
-if y_coordinate == 'A':
+if y_coordinate == 'a':
   y_coordinate = 0
-elif y_coordinate == 'B':
+elif y_coordinate == 'b':
   y_coordinate = 1
-elif y_coordinate == 'C':
+elif y_coordinate == 'c':
   y_coordinate = 2
 else:
   print('Y coordinate not valid')
