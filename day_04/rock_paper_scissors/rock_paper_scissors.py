@@ -14,8 +14,6 @@ while(not choice_made):
 player_choice = int(player_choice) - 1
 computer_choice = random.randint(0, 2)
 
-winner = ''
-
 if(player_choice == computer_choice):
   result = "It's a draw."
 elif(player_choice == 0 and computer_choice == 2 
