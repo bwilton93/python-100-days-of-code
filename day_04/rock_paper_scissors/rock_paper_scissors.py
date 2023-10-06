@@ -47,6 +47,6 @@ elif(player_choice == 0 and computer_choice == 2
 else:
   result = 'lose'
 
-print(selection[player_choice] + "\n")
-print("Computer chose:\n" + selection[computer_choice] + "\n")
-print("You " + result)
+print(f'{selection[player_choice]}\n')
+print(f"Computer chose:\n {selection[computer_choice]}\n")
+print(f"You {result}")
