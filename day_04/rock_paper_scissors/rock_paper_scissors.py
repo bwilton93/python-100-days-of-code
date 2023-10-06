@@ -1,35 +1,4 @@
-import random
-
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
-
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
-
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-
-#Write your code below this line 👇
-
-selection = [rock, paper, scissors]
+import random, selection
 
 print('Welcome to rock, paper, scissors!')
 player_choice = input('What do you choose? Type 1 for rock, 2 for paper or 3 for scissors.\n')
@@ -47,6 +16,6 @@ elif(player_choice == 0 and computer_choice == 2
 else:
   result = 'You lose.'
 
-print(f'{selection[player_choice]}\n')
-print(f"Computer chose:\n {selection[computer_choice]}\n")
+print(f'{selection.selection[player_choice]}\n')
+print(f"Computer chose:\n {selection.selection[computer_choice]}\n")
 print(result)
