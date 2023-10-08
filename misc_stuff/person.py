@@ -3,5 +3,5 @@ class Person:
     self.name = name
     self.age = age
 
-  def formatted_output():
+  def formatted_output(self):
     print(f'{self.name} is {self.age} years old')
