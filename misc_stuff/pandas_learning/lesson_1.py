@@ -12,8 +12,13 @@ data = {
 purchases = pd.DataFrame(data)
 print(purchases)
 
-print() # Empty line to seperate the two dataframes for readability
+print()
 
 # We can update the index on creation of the dataframe if we want to
 purchases = pd.DataFrame(data, index=['Barney', 'Chloe', 'James', 'Kat'])
 print(purchases)
+
+print()
+
+# We can access an individual customers purchase using the .loc pandas method
+print(purchases.loc['Barney'])
